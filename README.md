@@ -21,6 +21,8 @@ The system now also includes a native tracking layer for real repos: a reusable 
 - [book/handbook.md](C:\Users\user\project-about-projects\book\handbook.md): generated manual
 - [app/index.html](C:\Users\user\project-about-projects\app\index.html): browser app
 - [docs/01-lifecycle.md](C:\Users\user\project-about-projects\docs\01-lifecycle.md): original operating guide
+- [02-making-of.md](C:\Users\user\project-about-projects\docs\02-making-of.md): candid note on how the project itself drifted and tightened
+- [idea-branch-workflow.md](C:\Users\user\project-about-projects\docs\idea-branch-workflow.md): lightweight workflow for speculative agent ideas
 - [templates/project-brief.md](C:\Users\user\project-about-projects\templates\project-brief.md): scope template
 - [templates/spec.md](C:\Users\user\project-about-projects\templates\spec.md): spec template
 - [templates/plan.md](C:\Users\user\project-about-projects\templates\plan.md): plan template
@@ -60,6 +62,12 @@ Create a new named project folder with starter files:
 
 ```powershell
 python .\tools\new_project.py "Project Atlas" --base-dir .\examples
+```
+
+Create an isolated `idea/*` branch and worktree for speculative agent work:
+
+```powershell
+.\tools\start_idea_branch.ps1 -Name "Project Health Dashboard"
 ```
 
 Run the app locally:
