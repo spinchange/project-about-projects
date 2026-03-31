@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Project About Projects</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <div class="page-shell">
+    <header class="hero">
+      <p class="eyebrow">Project operating system</p>
+      <h1 id="title"></h1>
+      <p class="subtitle" id="subtitle"></p>
+      <p class="principle" id="principle"></p>
+    </header>
+
+    <main class="layout">
+      <aside class="rail">
+        <section class="card compact-card">
+          <h2>Rhythm</h2>
+          <ol id="rhythm"></ol>
+        </section>
+        <section class="card compact-card">
+          <h2>Decision Rules</h2>
+          <div id="rules"></div>
+        </section>
+        <section class="card compact-card">
+          <h2>Stages</h2>
+          <nav id="stage-nav" class="stage-nav"></nav>
+        </section>
+      </aside>
+
+      <section class="stack">
+        <article class="card detail-card">
+          <div class="detail-header">
+            <p class="stage-kicker">Current stage</p>
+            <h2 id="stage-title"></h2>
+            <p id="stage-purpose" class="stage-purpose"></p>
+          </div>
+
+          <div class="detail-grid">
+            <section>
+              <h3>Questions</h3>
+              <ul id="stage-questions"></ul>
+            </section>
+            <section>
+              <h3>Outputs</h3>
+              <ul id="stage-outputs"></ul>
+            </section>
+            <section>
+              <h3>Stop Points</h3>
+              <ul id="stage-stops"></ul>
+            </section>
+            <section>
+              <h3>Seams</h3>
+              <ul id="stage-seams"></ul>
+            </section>
+            <section>
+              <h3>Good Moves</h3>
+              <ul id="stage-moves"></ul>
+            </section>
+            <section>
+              <h3>Deliverables</h3>
+              <ul id="stage-deliverables"></ul>
+            </section>
+            <section>
+              <h3>Healthy Signals</h3>
+              <ul id="stage-healthy"></ul>
+            </section>
+            <section>
+              <h3>Warning Signals</h3>
+              <ul id="stage-warning"></ul>
+            </section>
+            <section class="full-width">
+              <h3>Review Prompts</h3>
+              <ul id="stage-review"></ul>
+            </section>
+            <section class="full-width">
+              <h3>Anti-Patterns</h3>
+              <ul id="stage-anti"></ul>
+            </section>
+          </div>
+        </article>
+
+        <article class="card editor-card">
+          <div class="editor-header">
+            <div>
+              <p class="stage-kicker">Editor</p>
+              <h2 id="editor-title"></h2>
+              <p id="editor-description" class="stage-purpose"></p>
+            </div>
+            <div class="editor-toolbar">
+              <select id="editor-select"></select>
+              <button id="reset-button" type="button">Reset</button>
+            </div>
+          </div>
+
+          <div class="editor-layout">
+            <form id="editor-form" class="editor-form"></form>
+            <section class="preview-panel">
+              <div class="preview-header">
+                <h3>Markdown Preview</h3>
+                <button id="copy-button" type="button">Copy Markdown</button>
+              </div>
+              <pre id="markdown-output" class="markdown-output"></pre>
+            </section>
+          </div>
+        </article>
+      </section>
+    </main>
+  </div>
+
+  <script src="./data.js"></script>
+  <script src="./app.js"></script>
+</body>
+</html>
