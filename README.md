@@ -1,7 +1,7 @@
 # Project About Projects
 
 Live demo of browser app: https://spinchange.github.io/project-about-projects/
-Making-of note: [How A Project About Preventing Drift Drifted](C:\Users\user\project-about-projects\docs\02-making-of.md)
+Making-of note: [How A Project About Preventing Drift Drifted](docs/02-making-of.md)
 
 This repository is a practical system for creating projects well.
 
@@ -15,20 +15,20 @@ The system now also includes a native tracking layer for real repos: a reusable 
 
 ## Structure
 
-- [source/project-os.json](C:\Users\user\project-about-projects\source\project-os.json): canonical lifecycle model
-- [tools/render.py](C:\Users\user\project-about-projects\tools\render.py): generates derived artifacts
-- [tools/project_os.py](C:\Users\user\project-about-projects\tools\project_os.py): CLI workflow tool
-- [tools/new_project.py](C:\Users\user\project-about-projects\tools\new_project.py): creates a fresh working project folder
-- [book/handbook.md](C:\Users\user\project-about-projects\book\handbook.md): generated manual
-- [app/index.html](C:\Users\user\project-about-projects\app\index.html): browser app
-- [docs/01-lifecycle.md](C:\Users\user\project-about-projects\docs\01-lifecycle.md): original operating guide
-- [idea-branch-workflow.md](C:\Users\user\project-about-projects\docs\idea-branch-workflow.md): lightweight workflow for speculative agent ideas
-- [templates/project-brief.md](C:\Users\user\project-about-projects\templates\project-brief.md): scope template
-- [templates/spec.md](C:\Users\user\project-about-projects\templates\spec.md): spec template
-- [templates/plan.md](C:\Users\user\project-about-projects\templates\plan.md): plan template
-- [templates/debug-log.md](C:\Users\user\project-about-projects\templates\debug-log.md): debugging template
-- [templates/handoff.md](C:\Users\user\project-about-projects\templates\handoff.md): handoff template
-- [templates/tracking](C:\Users\user\project-about-projects\templates\tracking): integrated tracking kit for `docs/tracking/`
+- [source/project-os.json](source/project-os.json): canonical lifecycle model
+- [tools/render.py](tools/render.py): generates derived artifacts
+- [tools/project_os.py](tools/project_os.py): CLI workflow tool
+- [tools/new_project.py](tools/new_project.py): creates a fresh working project folder
+- [book/handbook.md](book/handbook.md): generated manual
+- [app/index.html](app/index.html): browser app
+- [docs/01-lifecycle.md](docs/01-lifecycle.md): original operating guide
+- [idea-branch-workflow.md](docs/idea-branch-workflow.md): lightweight workflow for speculative agent ideas
+- [templates/project-brief.md](templates/project-brief.md): scope template
+- [templates/spec.md](templates/spec.md): spec template
+- [templates/plan.md](templates/plan.md): plan template
+- [templates/debug-log.md](templates/debug-log.md): debugging template
+- [templates/handoff.md](templates/handoff.md): handoff template
+- [templates/tracking](templates/tracking): integrated tracking kit for `docs/tracking/`
 
 ## Use
 
