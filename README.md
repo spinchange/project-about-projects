@@ -1,5 +1,7 @@
 # Project About Projects
 
+Live demo of browser app: https://spinchange.github.io/project-about-projects/
+
 This repository is a practical system for creating projects well.
 
 It treats project-making itself as the product, then ships that product in three layers from one shared source:
