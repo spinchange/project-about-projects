@@ -1,6 +1,7 @@
 # Project About Projects
 
 Live demo of browser app: https://spinchange.github.io/project-about-projects/
+
 Making-of note: [How A Project About Preventing Drift Drifted](docs/02-making-of.md)
 
 This repository is a practical system for creating projects well.
