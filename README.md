@@ -1,6 +1,7 @@
 # Project About Projects
 
 Live demo of browser app: https://spinchange.github.io/project-about-projects/
+Making-of note: [How A Project About Preventing Drift Drifted](C:\Users\user\project-about-projects\docs\02-making-of.md)
 
 This repository is a practical system for creating projects well.
 
@@ -21,7 +22,6 @@ The system now also includes a native tracking layer for real repos: a reusable 
 - [book/handbook.md](C:\Users\user\project-about-projects\book\handbook.md): generated manual
 - [app/index.html](C:\Users\user\project-about-projects\app\index.html): browser app
 - [docs/01-lifecycle.md](C:\Users\user\project-about-projects\docs\01-lifecycle.md): original operating guide
-- [02-making-of.md](C:\Users\user\project-about-projects\docs\02-making-of.md): candid note on how the project itself drifted and tightened
 - [idea-branch-workflow.md](C:\Users\user\project-about-projects\docs\idea-branch-workflow.md): lightweight workflow for speculative agent ideas
 - [templates/project-brief.md](C:\Users\user\project-about-projects\templates\project-brief.md): scope template
 - [templates/spec.md](C:\Users\user\project-about-projects\templates\spec.md): spec template
