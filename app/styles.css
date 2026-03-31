@@ -72,6 +72,7 @@ h3 {
 .subtitle,
 .principle,
 .stage-purpose,
+.tracking-purpose,
 li,
 td,
 th,
@@ -160,6 +161,11 @@ ul {
 
 .rule-block + .rule-block {
   margin-top: 10px;
+}
+
+.tracking-purpose {
+  margin-top: 10px;
+  color: var(--muted);
 }
 
 .rule-block h3 {

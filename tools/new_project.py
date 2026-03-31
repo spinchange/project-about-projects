@@ -5,6 +5,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 TEMPLATES = ROOT / "templates"
+TRACKING_TEMPLATES = TEMPLATES / "tracking"
 
 FILES = {
     "project-brief.md": "project-brief.md",
@@ -39,7 +40,8 @@ def write_readme(target: Path, title: str) -> None:
             "1. Fill out `project-brief.md`.",
             "2. Turn that into `spec.md`.",
             "3. Slice the work in `plan.md`.",
-            "4. Use `debug-log.md` and `handoff.md` as needed.",
+            "4. Keep `docs/tracking/board.md` current as the live execution view.",
+            "5. Use `debug-log.md` and `handoff.md` as needed.",
             "",
             "## Suggested Rhythm",
             "",
@@ -60,6 +62,16 @@ def create_project(base_dir: Path, title: str) -> None:
     for source_name, destination_name in FILES.items():
         source = TEMPLATES / source_name
         destination = target / destination_name
+        if destination.exists():
+            print(f"Skipping existing file: {destination}")
+            continue
+        shutil.copyfile(source, destination)
+        print(f"Created {destination}")
+
+    tracking_target = target / "docs" / "tracking"
+    tracking_target.mkdir(parents=True, exist_ok=True)
+    for source in TRACKING_TEMPLATES.glob("*.md"):
+        destination = tracking_target / source.name
         if destination.exists():
             print(f"Skipping existing file: {destination}")
             continue

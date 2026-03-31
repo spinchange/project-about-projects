@@ -48,6 +48,64 @@ window.PROJECT_OS = {
       "action": "Condense the active plan, delete stale context, and preserve only what still matters."
     }
   ],
+  "tracking": {
+    "purpose": "Tracking is the operational memory layer that keeps current state durable across sessions, people, and agents.",
+    "questions": [
+      "What are we doing now?",
+      "What is blocked?",
+      "What decisions are already settled?",
+      "What work is available next?",
+      "What evidence says a task is actually done?"
+    ],
+    "update_order": [
+      "Clarify scope.",
+      "Update the relevant tracking file if project state changed.",
+      "Execute the work.",
+      "Verify the result.",
+      "Reflect completion or next-state in tracking."
+    ],
+    "files": [
+      {
+        "name": "README.md",
+        "role": "Explains the tracking kit and how to use it."
+      },
+      {
+        "name": "board.md",
+        "role": "Live execution view for now, next, blocked, later, and current risks."
+      },
+      {
+        "name": "backlog.md",
+        "role": "Deferred and ready work that is not active yet."
+      },
+      {
+        "name": "roadmap.md",
+        "role": "Milestone-level direction and sequencing."
+      },
+      {
+        "name": "decisions.md",
+        "role": "Durable decision log for product, architecture, and workflow choices."
+      },
+      {
+        "name": "agent-governance.md",
+        "role": "Authority boundaries, delegation rules, and verification standards."
+      },
+      {
+        "name": "milestone-template.md",
+        "role": "Reusable template for milestone briefs."
+      },
+      {
+        "name": "weekly-status-template.md",
+        "role": "Reusable template for short human-readable status updates."
+      }
+    ],
+    "rules": [
+      "Keep the live board current or the rest of the system decays.",
+      "One authority should update high-signal tracking by default.",
+      "Do not let planning docs become changelogs.",
+      "Do not mark work complete until the code or doc exists and the claimed validation has been run.",
+      "Prefer editing an existing tracking file over creating a new one unless the new file has a clear purpose."
+    ]
+  },
   "stages": [
     {
       "slug": "scope",

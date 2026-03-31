@@ -59,6 +59,44 @@ Trigger: Notes, tasks, or branches have accumulated enough noise to hide the liv
 
 Action: Condense the active plan, delete stale context, and preserve only what still matters.
 
+## Tracking Layer
+
+Tracking is the operational memory layer that keeps current state durable across sessions, people, and agents.
+
+### Questions
+
+- What are we doing now?
+- What is blocked?
+- What decisions are already settled?
+- What work is available next?
+- What evidence says a task is actually done?
+
+### Core Files
+
+- README.md: Explains the tracking kit and how to use it.
+- board.md: Live execution view for now, next, blocked, later, and current risks.
+- backlog.md: Deferred and ready work that is not active yet.
+- roadmap.md: Milestone-level direction and sequencing.
+- decisions.md: Durable decision log for product, architecture, and workflow choices.
+- agent-governance.md: Authority boundaries, delegation rules, and verification standards.
+- milestone-template.md: Reusable template for milestone briefs.
+- weekly-status-template.md: Reusable template for short human-readable status updates.
+
+### Update Order
+
+1. Clarify scope.
+2. Update the relevant tracking file if project state changed.
+3. Execute the work.
+4. Verify the result.
+5. Reflect completion or next-state in tracking.
+
+### Tracking Rules
+
+- Keep the live board current or the rest of the system decays.
+- One authority should update high-signal tracking by default.
+- Do not let planning docs become changelogs.
+- Do not mark work complete until the code or doc exists and the claimed validation has been run.
+- Prefer editing an existing tracking file over creating a new one unless the new file has a clear purpose.
 
 ## Scope
 

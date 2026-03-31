@@ -7,6 +7,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 SOURCE = ROOT / "source" / "project-os.json"
 TEMPLATES = ROOT / "templates"
+TRACKING_TEMPLATES = TEMPLATES / "tracking"
 
 
 def load_source() -> dict:
@@ -73,6 +74,16 @@ def scaffold(target: Path) -> None:
             print(f"Skipping existing file: {destination}")
             continue
         shutil.copyfile(TEMPLATES / name, destination)
+        print(f"Created {destination}")
+
+    tracking_target = target / "docs" / "tracking"
+    tracking_target.mkdir(parents=True, exist_ok=True)
+    for source in TRACKING_TEMPLATES.glob("*.md"):
+        destination = tracking_target / source.name
+        if destination.exists():
+            print(f"Skipping existing file: {destination}")
+            continue
+        shutil.copyfile(source, destination)
         print(f"Created {destination}")
 
 

@@ -6,6 +6,8 @@ const subtitleEl = document.getElementById("subtitle");
 const principleEl = document.getElementById("principle");
 const rhythmEl = document.getElementById("rhythm");
 const rulesEl = document.getElementById("rules");
+const trackingPurposeEl = document.getElementById("tracking-purpose");
+const trackingFilesEl = document.getElementById("tracking-files");
 const navEl = document.getElementById("stage-nav");
 const stageTitleEl = document.getElementById("stage-title");
 const stagePurposeEl = document.getElementById("stage-purpose");
@@ -88,6 +90,17 @@ function renderRules() {
     action.textContent = `Action: ${rule.action}`;
     block.append(heading, trigger, action);
     rulesEl.appendChild(block);
+  }
+}
+
+
+function renderTracking() {
+  trackingPurposeEl.textContent = data.tracking?.purpose || "";
+  trackingFilesEl.innerHTML = "";
+  for (const file of data.tracking?.files || []) {
+    const li = document.createElement("li");
+    li.textContent = `${file.name}: ${file.role}`;
+    trackingFilesEl.appendChild(li);
   }
 }
 
@@ -344,6 +357,7 @@ function init() {
   principleEl.textContent = data.principle;
   fillList(rhythmEl, data.rhythm);
   renderRules();
+  renderTracking();
   renderNav();
   renderEditorOptions();
   initButtons();

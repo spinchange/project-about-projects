@@ -10,6 +10,8 @@ It treats project-making itself as the product, then ships that product in three
 - A CLI workflow kit
 - A browser app with guided fillers and markdown export
 
+The system now also includes a native tracking layer for real repos: a reusable `docs/tracking/` kit that acts as the project's durable memory during execution, handoffs, and multi-agent work.
+
 ## Structure
 
 - [source/project-os.json](C:\Users\user\project-about-projects\source\project-os.json): canonical lifecycle model
@@ -24,6 +26,7 @@ It treats project-making itself as the product, then ships that product in three
 - [templates/plan.md](C:\Users\user\project-about-projects\templates\plan.md): plan template
 - [templates/debug-log.md](C:\Users\user\project-about-projects\templates\debug-log.md): debugging template
 - [templates/handoff.md](C:\Users\user\project-about-projects\templates\handoff.md): handoff template
+- [templates/tracking](C:\Users\user\project-about-projects\templates\tracking): integrated tracking kit for `docs/tracking/`
 
 ## Use
 
@@ -50,6 +53,8 @@ Scaffold a new working folder from the templates:
 ```powershell
 python .\tools\project_os.py scaffold .\examples\demo-project
 ```
+
+That scaffold now includes `docs/tracking/` with a board, backlog, roadmap, decisions log, governance rules, and milestone/status templates.
 
 Create a new named project folder with starter files:
 

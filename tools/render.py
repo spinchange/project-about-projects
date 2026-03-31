@@ -40,6 +40,17 @@ def render_handbook(data: dict) -> str:
                 "",
             ]
         )
+    tracking = data.get("tracking")
+    if tracking:
+        lines.extend(["## Tracking Layer", "", tracking["purpose"], "", "### Questions", ""])
+        lines.extend([f"- {item}" for item in tracking.get("questions", [])])
+        lines.extend(["", "### Core Files", ""])
+        for file_info in tracking.get("files", []):
+            lines.append(f"- {file_info['name']}: {file_info['role']}")
+        lines.extend(["", "### Update Order", ""])
+        lines.extend([f"{index}. {item}" for index, item in enumerate(tracking.get("update_order", []), start=1)])
+        lines.extend(["", "### Tracking Rules", ""])
+        lines.extend([f"- {item}" for item in tracking.get("rules", [])])
 
     for stage in data["stages"]:
         lines.extend(
